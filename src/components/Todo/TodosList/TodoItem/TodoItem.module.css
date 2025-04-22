@@ -1,0 +1,24 @@
+.todo-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+  height: 80px;
+  padding: 10px;
+}
+
+.todo-item-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.todo-item-checkbox {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+}

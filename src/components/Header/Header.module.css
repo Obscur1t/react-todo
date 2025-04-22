@@ -1,0 +1,19 @@
+.header {
+  background-color: black;
+  margin: 0;
+  border-bottom: 2px solid white;
+  box-shadow: 0 0 10px white;
+}
+
+.header-title {
+  color: white;
+  margin: 0;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  letter-spacing: 15px;
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+}
