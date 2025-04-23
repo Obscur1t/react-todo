@@ -11,7 +11,7 @@ export function Todo() {
     <div className={styles['todo-wrapper']}>
       <CompletedTodo todosList={todosList} />
       <FormTodo setTodosList={setTodosList} />
-      <TodosList todosList={todosList} />
+      <TodosList todosList={todosList} setTodosList={setTodosList} />
     </div>
   );
 }

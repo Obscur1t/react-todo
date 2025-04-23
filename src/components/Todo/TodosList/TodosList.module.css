@@ -1,8 +1,24 @@
 .todo-list {
-  background-color: rgba(0, 255, 255, 0.116);
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 20px;
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(35, 35, 35);
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgb(35, 35, 35);
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgb(100, 100, 100);
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(135, 135, 135);
 }

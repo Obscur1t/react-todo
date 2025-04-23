@@ -1,8 +1,8 @@
 .header {
   background-color: black;
   margin: 0;
-  border-bottom: 2px solid white;
-  box-shadow: 0 0 10px white;
+  border-bottom: 2px solid rgb(135, 110, 75);
+  box-shadow: 0 0 10px rgb(135, 110, 75);
 }
 
 .header-title {

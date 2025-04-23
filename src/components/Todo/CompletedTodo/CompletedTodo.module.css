@@ -1,11 +1,12 @@
 .todo-completed {
-  border: 2px solid white;
+  border: 2px solid rgb(135, 110, 75);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
   padding: 30px;
   border-radius: 25px;
+  width: 80%;
 }
 
 .todo-completed-title {
@@ -13,7 +14,7 @@
 }
 
 .todo-completed-count {
-  border: 2px solid white;
+  border: 2px solid rgb(135, 110, 75);
   border-radius: 50%;
   font-size: 40px;
   font-weight: 800;
@@ -23,4 +24,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s;
 }

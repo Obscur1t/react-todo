@@ -1,12 +1,13 @@
 .todo-item {
-  background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: space-between;
-  width: 45%;
-  height: 80px;
+  width: 75%;
+  height: auto;
   padding: 10px;
+  border: 2px solid rgb(135, 110, 75);
+  border-radius: 10px;
 }
 
 .todo-item-main {
@@ -17,8 +18,47 @@
 }
 
 .todo-item-checkbox {
+  cursor: pointer;
   width: 30px;
   height: 30px;
   border: 2px solid white;
   border-radius: 50%;
+  transition: 0.2s;
+  padding-right: 20px;
+}
+
+.todo-item-title {
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-wrap: balance;
+}
+
+.todo-item-remove-btn {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  transition: 0.3s;
+}
+
+.todo-item-remove-btn:hover {
+  transform: scale(0.95);
+}
+
+.todo-item-change-btn {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  transition: 0.3s;
+}
+
+.todo-item-change-btn:hover {
+  transform: scale(0.95);
+}
+
+.todo-item-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }

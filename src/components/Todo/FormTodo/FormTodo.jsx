@@ -7,12 +7,12 @@ export function FormTodo({ setTodosList }) {
     e.preventDefault();
     if (!taskName.trim()) return;
     setTodosList((prevTodos) => [
-      ...prevTodos,
       {
         name: taskName,
         completed: false,
         id: self.crypto.randomUUID(),
       },
+      ...prevTodos,
     ]);
     setTaskName('');
   }
