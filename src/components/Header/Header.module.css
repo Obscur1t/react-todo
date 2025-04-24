@@ -1,4 +1,7 @@
 .header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   background-color: black;
   margin: 0;
   border-bottom: 2px solid rgb(135, 110, 75);
@@ -16,4 +19,22 @@
   padding: 20px 100px;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    justify-content: center;
+  }
+  .header-title {
+    font-size: 30px;
+    letter-spacing: 12px;
+    padding: 15px 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-title {
+    font-size: 27px;
+    padding: 15px 20px;
+  }
 }

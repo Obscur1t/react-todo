@@ -45,20 +45,47 @@
   transform: scale(0.95);
 }
 
-.todo-item-change-btn {
-  cursor: pointer;
-  width: 45px;
-  height: 45px;
-  transition: 0.3s;
-}
-
-.todo-item-change-btn:hover {
-  transform: scale(0.95);
-}
-
 .todo-item-btns {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+
+@media (max-width: 500px) {
+  .todo-item {
+    gap: 7px;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .todo-item-main {
+    gap: 14px;
+  }
+  .todo-item-title {
+    font-size: 15px;
+    margin: 0;
+    max-width: 80%;
+  }
+
+  .todo-item-remove-btn {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+
+  .todo-item-checkbox {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+  }
+
+  .todo-item-remove-btn:hover {
+    transform: none;
+  }
+
+  .todo-item-remove-btn:active {
+    transform: scale(0.95);
+  }
 }

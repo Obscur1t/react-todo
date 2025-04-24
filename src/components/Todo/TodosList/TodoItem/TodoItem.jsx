@@ -17,11 +17,13 @@ export function TodoItem({ todo, changeTodoStatus, removeTodo }) {
         <h1 className={styles['todo-item-title']}>{todo.name}</h1>
       </div>
       <div className={styles['todo-item-btns']}>
-        <img
-          className={styles['todo-item-remove-btn']}
-          src={remove}
-          onClick={removeTodo}
-        ></img>
+        {todo.completed && (
+          <img
+            className={styles['todo-item-remove-btn']}
+            src={remove}
+            onClick={removeTodo}
+          ></img>
+        )}
       </div>
     </div>
   );

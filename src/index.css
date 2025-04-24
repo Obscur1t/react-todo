@@ -1,8 +1,10 @@
 :root {
   background-color: rgb(0, 0, 0);
   box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 
 body {
   margin: 0;
+  scrollbar-gutter: stable;
 }

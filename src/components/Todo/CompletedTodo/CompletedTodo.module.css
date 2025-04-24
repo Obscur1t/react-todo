@@ -16,7 +16,7 @@
 .todo-completed-count {
   border: 2px solid rgb(135, 110, 75);
   border-radius: 50%;
-  font-size: 40px;
+  font-size: 2vw;
   font-weight: 800;
   letter-spacing: 3px;
   width: 150px;
@@ -25,4 +25,43 @@
   justify-content: center;
   align-items: center;
   transition: 0.2s;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .todo-completed {
+    gap: 30px;
+    padding: 20px;
+    width: 60%;
+  }
+
+  .todo-completed-title {
+    font-size: 30px;
+  }
+
+  .todo-completed-count {
+    font-size: 30px;
+    letter-spacing: 3px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .todo-completed {
+    gap: 14px;
+    padding: 17px;
+    width: 70%;
+  }
+
+  .todo-completed-title {
+    font-size: 22px;
+  }
+
+  .todo-completed-count {
+    font-size: 20px;
+    letter-spacing: 3px;
+    width: 65px;
+    height: 65px;
+  }
 }
