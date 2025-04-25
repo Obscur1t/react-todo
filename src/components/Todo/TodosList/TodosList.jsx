@@ -50,15 +50,15 @@ export function TodosList({ todosList, setTodosList }) {
       <div className={styles['todo-list-btns']}>
         <button
           className={styles['todo-list-completed']}
-          onClick={() => setPage('uncompleted')}
-        >
-          Uncompleted
-        </button>
-        <button
-          className={styles['todo-list-uncompleted']}
           onClick={() => setPage('completed')}
         >
           Completed
+        </button>
+        <button
+          className={styles['todo-list-uncompleted']}
+          onClick={() => setPage('uncompleted')}
+        >
+          Uncompleted
         </button>
       </div>
       <div className={styles['todo-list-main']}>
